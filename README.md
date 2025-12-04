@@ -1,19 +1,22 @@
-<h1>🌐 XML Communication Demo</h1>
+# 🌐 XML Communication Demo
 
-這是一個展示 XML 通訊流程 的示範專案。
+這是一個展示 **XML 通訊流程** 的示範專案。  
 透過 HTTP Server / Client 架構，模擬接收 XML 指令、解析內容，並回傳 ACK XML。
 
-🔧 專案功能
+---
 
-✔ 自動解析 XML attribute（如：name、sn）
+## 🔧 專案功能
 
-✔ Server 自動回覆 ACK XML
+- ✔ 自動解析 XML attribute（如：`name`、`sn`）
+- ✔ Server 自動回覆 ACK XML
+- ✔ Client 可讀取外部 XML 並送出
+- ✔ 內建 XML Helper，快速解析 / 組 XML 回應
 
-✔ Client 可讀取外部 XML 並送出
+---
 
-✔ 內建 XML Helper，快速解析 / 組 XML 回應
+## 📂 專案結構
 
-<h2>📂 專案結構</h2>
+```text
 xml-communication-demo/
  ├── src/
  │    ├── Program.cs             # 啟動 Server + Client
@@ -24,19 +27,20 @@ xml-communication-demo/
  ├── README.md
  ├── LICENSE
  └── .gitignore
-
-<h2>📡 XML 指令示例</h2> 
+📡 XML 指令示例
 ▶ sample-command.xml
+xml
+複製程式碼
 <Command name="CheckIn" sn="ABC12345" />
-
 ▶ Server 解析結果
+text
+複製程式碼
 [SERVER] Parsed name=CheckIn, sn=ABC12345
-
 ▶ Server 回傳 ACK XML
+xml
+複製程式碼
 <Ack status="OK" message="Command 'CheckIn' received." />
-
 🚀 使用方式
-
 專案啟動後會：
 
 啟動 1 個 XML Server（接收 XML 指令）
@@ -45,19 +49,22 @@ xml-communication-demo/
 
 執行：
 
+bash
+複製程式碼
 dotnet run
+Console 示範輸出：
 
-<h3>=== XML Communication Demo ===
+text
+複製程式碼
+=== XML Communication Demo ===
 [SERVER] XML Server started at http://localhost:5001/command
 ===== [SERVER] Received XML =====
 <Command name="CheckIn" sn="ABC12345" />
 =================================
 ===== [CLIENT] Response XML =====
 <Ack status="OK" message="Command 'CheckIn' received." />
-=================================</h3>
-
-<h2>🧠 技術亮點</h2>
-
+=================================
+🧠 技術亮點
 使用 XElement.Parse() 進行標準 XML 解析
 
 使用 HttpListener 建立 HTTP Server（免額外套件）
@@ -66,7 +73,6 @@ dotnet run
 
 完整的 Server + Client 示範架構
 
-<h2>👤 作者</h2>
-
+👤 作者
 HungHsiang, Lin（林弘翔）
-Software Engineer — C# / TCP-IP / XML Communication / Automation
+Software Engineer — C# / TCP/IP / XML Communication / Automation
