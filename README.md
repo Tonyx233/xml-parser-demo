@@ -27,35 +27,45 @@ xml-communication-demo/
  ├── README.md
  ├── LICENSE
  └── .gitignore
+```
+
+---
+
 📡 XML 指令示例
+
 ▶ sample-command.xml
-xml
-複製程式碼
+
+```
 <Command name="CheckIn" sn="ABC12345" />
+```
 ▶ Server 解析結果
-text
-複製程式碼
+```
 [SERVER] Parsed name=CheckIn, sn=ABC12345
+```
 ▶ Server 回傳 ACK XML
-xml
-複製程式碼
+```
 <Ack status="OK" message="Command 'CheckIn' received." />
-🚀 使用方式
+```
+
+---
+
+<h2>🚀 使用方式</h2>
+
 專案啟動後會：
 
 啟動 1 個 XML Server（接收 XML 指令）
 
 啟動 1 個 XML Client（送出 sample-command.xml）
 
-執行：
-
-bash
-複製程式碼
+執行方式
+```
 dotnet run
-Console 示範輸出：
+```
+---
+<h2>🖥 Console 示範輸出</h2>
 
-text
-複製程式碼
+```
+
 === XML Communication Demo ===
 [SERVER] XML Server started at http://localhost:5001/command
 ===== [SERVER] Received XML =====
@@ -64,15 +74,24 @@ text
 ===== [CLIENT] Response XML =====
 <Ack status="OK" message="Command 'CheckIn' received." />
 =================================
-🧠 技術亮點
-使用 XElement.Parse() 進行標準 XML 解析
 
-使用 HttpListener 建立 HTTP Server（免額外套件）
+```
 
-可解析 XML attribute（name / sn 等）
+---
+<h2>🧠 技術亮點</h2>
 
-完整的 Server + Client 示範架構
+-使用 XElement.Parse() 進行標準 XML 解析
+
+-使用 HttpListener 建立 HTTP Server（免額外套件）
+
+-可解析 XML attribute（name / sn 等）
+
+-完整 Server + Client 架構，可直接修改拓展
+
+---
 
 👤 作者
+
 HungHsiang, Lin（林弘翔）
+
 Software Engineer — C# / TCP/IP / XML Communication / Automation
