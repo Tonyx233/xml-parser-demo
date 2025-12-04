@@ -3,11 +3,12 @@ XML Communication Demo
 這是一個展示 XML 通訊流程 的專案。
 透過 HTTP Server / Client 架構，模擬如何接收 XML 指令、解析內容、並回傳回應（ACK XML）。
 
+
 🔧 專案功能
 
-✔ 自動解析 XML attribute（如：name、sn…）
+✔ 自動解析 XML attribute（如：name、sn...）
 
-✔ Server 自動回覆 ACK XML
+✔ Server自動回覆 ACK XML
 
 ✔ Client 可讀取外部 XML 檔案並送出
 
@@ -42,9 +43,12 @@ xml-communication-demo/
 一個 XML Client（送出指令）
 
 執行：
+
 dotnet run
 
+
 Console 顯示示例：
+
 === XML Communication Demo ===
 [SERVER] XML Server started at http://localhost:5001/command
 ===== [SERVER] Received XML =====
@@ -59,6 +63,8 @@ Console 顯示示例：
 XElement.Parse → 標準 XML 解析方式
 
 HttpListener → 內建即可啟動 HTTP Server
+
+自動解析 attribute（name / sn ...等）
 
 
 👤 作者
