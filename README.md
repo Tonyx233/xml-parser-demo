@@ -47,7 +47,6 @@ xml-communication-demo/
 
 dotnet run
 
-Console 示範輸出
 === XML Communication Demo ===
 [SERVER] XML Server started at http://localhost:5001/command
 ===== [SERVER] Received XML =====
