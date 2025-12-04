@@ -7,7 +7,7 @@
 
 ## 🔧 專案功能
 
-- ✔ 自動解析 XML attribute（如：`name`、`sn`）
+- ✔ 自動解析 XML attribute（如：`name`、`sn`...）
 - ✔ Server 自動回覆 ACK XML
 - ✔ Client 可讀取外部 XML 並送出
 - ✔ 內建 XML Helper，快速解析 / 組 XML 回應
@@ -53,9 +53,9 @@ xml-communication-demo/
 
 專案啟動後會：
 
-啟動 1 個 XML Server（接收 XML 指令）
+- 啟動 Server（接收 XML 指令）
 
-啟動 1 個 XML Client（送出 sample-command.xml）
+- 啟動 Client（送出 sample-command.xml）
 
 執行方式
 ```
@@ -78,13 +78,13 @@ dotnet run
 ---
 <h2>🧠 技術亮點</h2>
 
--使用 XElement.Parse() 進行標準 XML 解析
+- 使用 XElement.Parse() 進行標準 XML 解析
 
--使用 HttpListener 建立 HTTP Server（免額外套件）
+- 使用 HttpListener 建立 HTTP Server（免額外套件）
 
--可解析 XML attribute（name / sn 等）
+- 可解析 XML attribute（name / sn 等）
 
--完整 Server + Client 架構，可直接修改拓展
+- 完整 Server + Client 架構，可直接修改拓展
 
 ---
 
