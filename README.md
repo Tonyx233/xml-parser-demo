@@ -65,7 +65,6 @@ dotnet run
 <h2>🖥 Console 示範輸出</h2>
 
 ```
-
 === XML Communication Demo ===
 [SERVER] XML Server started at http://localhost:5001/command
 ===== [SERVER] Received XML =====
@@ -74,7 +73,6 @@ dotnet run
 ===== [CLIENT] Response XML =====
 <Ack status="OK" message="Command 'CheckIn' received." />
 =================================
-
 ```
 
 ---
@@ -90,7 +88,7 @@ dotnet run
 
 ---
 
-👤 作者
+## 👤 作者
 
 HungHsiang, Lin（林弘翔）
 
