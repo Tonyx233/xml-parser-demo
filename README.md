@@ -1,4 +1,4 @@
-🌐 XML Communication Demo
+<h1>🌐 XML Communication Demo</h1>
 
 這是一個展示 XML 通訊流程 的示範專案。
 透過 HTTP Server / Client 架構，模擬接收 XML 指令、解析內容，並回傳 ACK XML。
@@ -13,7 +13,7 @@
 
 ✔ 內建 XML Helper，快速解析 / 組 XML 回應
 
-📂 專案結構
+<h2>📂 專案結構</h2>
 xml-communication-demo/
  ├── src/
  │    ├── Program.cs             # 啟動 Server + Client
@@ -25,7 +25,7 @@ xml-communication-demo/
  ├── LICENSE
  └── .gitignore
 
-📡 XML 指令示例
+<h2>📡 XML 指令示例</h2> 
 ▶ sample-command.xml
 <Command name="CheckIn" sn="ABC12345" />
 
@@ -47,16 +47,16 @@ xml-communication-demo/
 
 dotnet run
 
-=== XML Communication Demo ===
+<h3>=== XML Communication Demo ===
 [SERVER] XML Server started at http://localhost:5001/command
 ===== [SERVER] Received XML =====
 <Command name="CheckIn" sn="ABC12345" />
 =================================
 ===== [CLIENT] Response XML =====
 <Ack status="OK" message="Command 'CheckIn' received." />
-=================================
+=================================</h3>
 
-🧠 技術亮點
+<h2>🧠 技術亮點</h2>
 
 使用 XElement.Parse() 進行標準 XML 解析
 
@@ -66,7 +66,7 @@ dotnet run
 
 完整的 Server + Client 示範架構
 
-👤 作者
+<h2>👤 作者</h2>
 
 HungHsiang, Lin（林弘翔）
 Software Engineer — C# / TCP-IP / XML Communication / Automation
